@@ -1,7 +1,26 @@
 aid: arrived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/arrived.png
 name: Arrived
-description: Arrived is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Arrived is a real estate investment platform that lets individuals buy, own, and sell fractional
+  shares of income-producing residential properties without the work of being a landlord. Investors
+  browse curated single-family rentals, vacation rentals, funds, and real-estate debt offerings,
+  invest in minutes, and receive passive rental income through dividend distributions plus potential
+  appreciation while Arrived handles acquisition and property management. The company reports roughly
+  981K registered investors, $445M invested, and $95M distributed. Arrived is a consumer-facing
+  investing product with a web and mobile app; it does not publish a public developer API, SDK, or
+  developer portal, so this profile captures its public identity and domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/arrived/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Real Estate
+- Investing
+- Fintech
+- Fractional Ownership
+- Rental Properties
+- Wealth Management
+- Passive Income
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/arrived-domain-security.yml
 - type: Website
   url: https://arrived.com/
+- type: SignUp
+  url: https://arrived.com/signup
+- type: GettingStarted
+  url: https://arrived.com/blog/how-it-works/
+- type: Support
+  url: https://help.arrived.com/
+- type: Blog
+  url: https://arrived.com/blog/
+- type: TermsOfService
+  url: https://arrived.com/tos
+- type: PrivacyPolicy
+  url: https://arrived.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
